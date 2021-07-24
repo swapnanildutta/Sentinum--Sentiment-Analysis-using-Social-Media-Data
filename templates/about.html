@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{url_for('static',filename='fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel='icon' href="{{url_for('static',filename='favicon.ico')}}" type='image/x-icon'>
+</head>
+
+<body>
+{% block navbar %}
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="/">SENTINUM</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/how-to-use">How To Use?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Privacy-Policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <main class="page cv-page">
+        <section class="portfolio-block block-intro border-bottom">
+            <div class="heading">
+                <h1>About</h1>
+            </div>
+            <div class="about-me"><p >In this project, we are using the <strong>Sentiment Analysing algorithm</strong> 
+            to predict the emotional state of an individual based  on the 
+            data input from the person's social media posts and interactions. 
+            To perform this analysis, we use an interactive platform like the 
+            website or the mobile application and take the user authorized 
+            account name and process the data accordingly in our server and 
+            finally display the result of analysis performed i.e.., the emotional 
+            state of the individual whose account name was provided.</p>
+    
+            <p>The main motive behind this project is to predict the mental health 
+                of a person during the lockdown period. The pandemic has greatly 
+                impacted the daily lives of ours. To know the extent of how much 
+                a person has been affected by this lockdown, we have created this 
+                project. When a person is locked-up in his home, he/she express 
+                his/her emotion through social media posts. Also in day-to-day lives, 
+                humans being social creatures tends to express their feelings on social 
+                media where they can communicate and interact with more number of people. 
+                Usually, unknowingly social media users tend to express their mental state 
+                through their posts and interactions. Our intention is to analyze their posts, 
+                tweets, and various other interactions to determine the state of mind 
+                or the emotional polarity of that particular individual. We have named 
+                this project “Sentinum”. As we are analyzing the sentiment of the user, 
+                so “Senti” derived from sentiment and because we are using Machine Learning 
+                algorithm which is based on numericals, so “Num” derived from numericals.
+            </p>
+            </div>
+            <br><br><br>
+            <div class="heading">
+                <h1>Also Use Our Mobile Application</h1>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="/about">About Us</a><a href="/contact">Contact Us</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/"><i class="icon ion-social-instagram-outline"></i></a><a href="https://twitter.com/explore"><i class="icon ion-social-twitter"></i></a></div>
+        </div>
+    </footer>
+    <script src="{{url_for('static',filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{{url_for('static',filename='theme.js')}}"></script>
+{% endblock %}
+</body>
+
+</html>
