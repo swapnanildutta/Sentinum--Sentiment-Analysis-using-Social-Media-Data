@@ -1,0 +1,71 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Twitter Analyser</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{url_for('static',filename='fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel='icon' href="{{url_for('static',filename='favicon.ico')}}" type='image/x-icon'>
+</head>
+
+<body>
+{% block navbar %}
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="/">SENTINUM</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/how-to-use">How To Use?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Privacy-Policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <center>
+                <div style="max-width: 400px" >
+                <img class="card-img-top scale-on-hover" src="{{url_for('static', filename='img/twitternew.jpg')}}" style="max-width:90%;">
+            </div>
+        </center>
+        </section>
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <h2>Twitter Analyser</h2>
+                </div>
+                {{ wtf.quick_form(form) }}
+                
+                {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    <strong>Oh snap!</strong> Sorry, there was an error!
+                </div>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="/about">About Us</a><a href="/contact">Contact Us</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/"><i class="icon ion-social-instagram-outline"></i></a><a href="https://twitter.com/explore"><i class="icon ion-social-twitter"></i></a></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="{{url_for('static',filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{{url_for('static',filename='theme.js')}}"></script>
+{% endblock %}
+</body>
+
+</html>
