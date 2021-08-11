@@ -1,6 +1,9 @@
-# Social-Media-Sentiment-Analysis-API
+# Sentinum - Backend Serving API
 
-**The Application Programming Interface (API) is written in Python Programming Language, using the Tweepy Package by Twitter, and the Flask server is used to host this entire API.**In this project, we are using the Sentiment Analysing algorithm to predict the emotional state of an individual based on the data input from the person's social media posts and interactions. To perform this analysis, we use an interactive platform like the website or the mobile application and take the user authorized account name and process the data accordingly in our server and finally display the result of analysis performed i.e. the emotional state of the individual whose account name was provided.
+## API Description
+
+*The Application Programming Interface (API) is written in Python Programming Language, using the Tweepy Package by Twitter, and the Flask server is used to host this entire API.*
+In this project, we are using the Sentiment Analysing algorithm to predict the emotional state of an individual based on the data input from the person's social media posts and interactions. To perform this analysis, we use an interactive platform like the website or the mobile application and take the user authorized account name and process the data accordingly in our server and finally display the result of analysis performed i.e. the emotional state of the individual whose account name was provided.
 
 > Tweepy:- Tweepy is a Python library for accessing the official Twitter API - as such, you need to apply for developer access and get keys from Twitter. Tweepy’s documentation is, in our views, top-notch. Its documentation includes tutorials for everything from authentication to streaming and includes an API reference for all of its methods.
 
