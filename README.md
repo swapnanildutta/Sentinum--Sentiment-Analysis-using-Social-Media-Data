@@ -1,4 +1,4 @@
-# Sentinum--Sentiment-Analysis-using-Social-Media-Data
+# Sentinum - Machine Learning Model
 
 ## Resources Used
 
