@@ -30,7 +30,7 @@
     2. [Natural Language Toolkit](https://github.com/swapnanildutta/Sentinum--Sentiment-Analysis-using-Social-Media-Data/tree/ml-model-training#natural-language-toolkit)
 6. [Backend Serving API](https://github.com/swapnanildutta/Sentinum--Sentiment-Analysis-using-Social-Media-Data/tree/backend-api)
     1. []()
-7. [Mobile Application]()
+7. [Mobile Application](https://github.com/swapnanildutta/Sentinum--Sentiment-Analysis-using-Social-Media-Data/tree/flutter-application)
 8. [Web Application]()
 9. [Scope of Work]()
 10. [References](https://github.com/swapnanildutta/Sentinum--Sentiment-Analysis-using-Social-Media-Data/tree/main#references)
